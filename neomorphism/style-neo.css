@@ -1,0 +1,28 @@
+:root {
+    --primary-background : #ECF0F3;
+    --dark-shadow: #D1D9E6;
+}
+body {
+    background-color: var(--primary-background);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 8fr 1fr 8fr;
+    grid-template-rows: 8fr 1fr 8fr;
+    gap: 10em;
+}
+
+button {
+    background-color: var(--primary-background);
+    grid-column: 2;
+    grid-row: 2;
+    padding: 1.5em 2.5em ;
+    font-size: 1.5em;
+    color: #626262;
+    border-radius: 1em;
+    border: none;
+    box-shadow: -5px -5px 15px white, 6px 6px 15px var(--dark-shadow);
+}
+
+button:hover {
+    box-shadow: inset 6px 6px 15px var(--dark-shadow) , inset -5px -5px 15px white;
+}
