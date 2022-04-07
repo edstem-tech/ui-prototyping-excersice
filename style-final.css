@@ -14,17 +14,21 @@ header {
     z-index: 2;
 }
 header > h1 {
-    flex: 5;
+    flex-basis: max(40%, min-content);
     padding: 0 40px;
+    color: hsl(var(--clr-secondary-400))
 }
 nav {
     display: flex;
-    flex: 3;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-end;
 }
 nav > ul {
     display: flex;
     justify-content: flex-end;
-    flex: 2;
+    flex-basis: 70%;
+    flex-grow: 1;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -36,7 +40,9 @@ li > a {
     text-decoration: none;
 }
 nav > button {
-    flex: 0.5;
+    flex-basis: 25%;
+    flex-shrink: 0;
+    flex-grow: 0;
     background-color: hsl(var(--clr-primary-400));
     border: none;
     color: white;
